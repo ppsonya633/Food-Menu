@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Menu from "./components/Menu";
+import "./App.css";
+import FoodMenu from "./components/FoodMenu";
+import { FoodItems } from "./components/data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Order Your Favourite Dish</h1>
+      <hr />
+      {/* <Menu></Menu> */}
+      <FoodMenu></FoodMenu>
+    </>
   );
 }
-
 export default App;
+
+//
